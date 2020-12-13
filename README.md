@@ -1,8 +1,4 @@
-The content below is an example submission document. Replace the text below the lines marked "__TODO__" with details specific to your project. Remove the "TODO" lines.
-
-(___TODO__: Your project name_)
-
-# Shopalot
+# Chatter Box
 
 
 ## Overview
