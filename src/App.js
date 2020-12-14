@@ -1,11 +1,9 @@
 import React from "react";
 import './App.css';
-import Sidebar from "./Sidebar";
-import Login from "./components/login.component";
-import SignUp from "./components/signup.component";
 
 import { Switch, BrowserRouter, Route } from "react-router-dom";
 
+import Sidebar from "./Sidebar";
 import Home from './components/Home.js';
 import About from './components/About.js';
 import Contact from './components/Contact.js';
@@ -16,6 +14,9 @@ import SignUp from './components/signup.component.js';
 function App() {
   return (
     <BrowserRouter>
+      <div>
+        <Sidebar/>
+      </div>
       <Navigation />
       <div className="Navbar">
         <Switch>
