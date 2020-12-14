@@ -8,4 +8,9 @@ const Pool = new Pool({
     database: "Accounts"
 });
 
+pool.on('error', (err, client) =>{
+    console.error('Error', err);
+});
+
+const query = 'SELECT * FROM Accounts';
 module.exports = pool;
