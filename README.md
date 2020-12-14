@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Chatter Box
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+(___TODO__: A brief one or two paragraph, high-level description of your project_)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
+(___TODO__: These instructions will get you a copy of the project up and running on your local machine for development and testing purposes_)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## Requirements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+(___TODO__: List out any technologies needed to run your project_)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Data Model
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+(___TODO__: A description of your application's data and their relationships to each other_)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The application will store user, items, and orders.
 
-### `npm run eject`
+- Users can have many orders.
+- Orders can have many items.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+(___TODO__: Sample resources_)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+An Example `User`:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```javascript
+{
+  id: 5,
+  firstName: "Mary",
+  lastName: "Jane"
+}
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+An Example `Item`:
 
-## Learn More
+```javascript
+{
+  id: 3,
+  name: "Lamp",
+  price: "$19.99"
+}
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+An Example `Order`:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```javascript
+{
+  id: 1,
+  user_id: 5,// a reference to a User object
+}
+```
 
-### Code Splitting
+An Example `OrderItems`:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```javascript
+{
+  item_id: 3,
+  order_id: 1 // References an Order object
+}
+```
 
-### Analyzing the Bundle Size
+## Site map
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+(___TODO__: Draw out a site map that shows how pages are related to each other_)
 
-### Making a Progressive Web App
+Here's an [example](https://www.kauligmedia.com/media/1589/sitemap-01.jpg). Mostly looking for the names of pages and where they flow to.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## User Stories or Use Cases
 
-### Advanced Configuration
+(___TODO__: Write out how your application will be used through [user stories](http://en.wikipedia.org/wiki/User_story#Format)_)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. As non-registered user, I can create a new account on the site.
+2. As a user, I can log in to the site.
+3. As a user, I can view items for sale.
+4. As a user, I can add items to a shopping cart.
+5. as a user, I can remove items from a shopping cart.
+6. as a user, I can purchase items in my cart.
 
-### Deployment
+## References Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+(___TODO__: List any tutorials or material referenced that you've based your code off of_)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Authors
