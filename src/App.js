@@ -1,5 +1,8 @@
 import React from "react";
 import './App.css';
+import Sidebar from "./Sidebar";
+import Login from "./components/login.component";
+import SignUp from "./components/signup.component";
 
 import { Switch, BrowserRouter, Route } from "react-router-dom";
 
