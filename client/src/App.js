@@ -14,9 +14,6 @@ import SignUp from './components/signup.component.js';
 function App() {
   return (
     <BrowserRouter>
-      <div>
-        <Sidebar/>
-      </div>
       <Navigation />
       <div className="Navbar">
         <Switch>
@@ -36,6 +33,10 @@ function App() {
             <SignUp/>
           </Route>
         </Switch>
+      </div>
+
+      <div>
+        <Sidebar/>
       </div>
     </BrowserRouter>
   );
