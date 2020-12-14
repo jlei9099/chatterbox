@@ -5,11 +5,17 @@
 
 (___TODO__: A brief one or two paragraph, high-level description of your project_)
 
+chatterbox is a communication platform inspired by preexisting platforms such as Discord, Facebook, and Twitter. However of the three, it is more inspired by Discord since it
+proposes many intricacies such as creating a server with your friends. This is the modern take on a group chat. We want to say Discord is the child of mirc and ventrilo
+and chatterbox hopes to be the child of Discord, Facebook, Twitter.
 
 ## Getting Started
 (___TODO__: These instructions will get you a copy of the project up and running on your local machine for development and testing purposes_)
+
 First off, clone the repository onto your local machine.
+
 Since node modules are part of .gitignore, you would be to run "npm i" in the project directory to build all the dependencies.
+
 Run "npm start" in the current directory to bring up the localhost server.
 
 ## Requirements
@@ -91,4 +97,5 @@ https://www.freecodecamp.org/news/react-router-tutorial/
 
 ## Authors
 Jeffrey Lei
+
 Raymond Luy
