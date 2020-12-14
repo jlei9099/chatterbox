@@ -1,4 +1,4 @@
-# Chatter Box
+# chatterbox
 
 
 ## Overview
@@ -8,7 +8,9 @@
 
 ## Getting Started
 (___TODO__: These instructions will get you a copy of the project up and running on your local machine for development and testing purposes_)
-
+First off, clone the repository onto your local machine.
+Since node modules are part of .gitignore, you would be to run "npm i" in the project directory to build all the dependencies.
+Run "npm start" in the current directory to bring up the localhost server.
 
 ## Requirements
 
@@ -85,4 +87,8 @@ Here's an [example](https://www.kauligmedia.com/media/1589/sitemap-01.jpg). Most
 
 (___TODO__: List any tutorials or material referenced that you've based your code off of_)
 
+https://www.freecodecamp.org/news/react-router-tutorial/
+
 ## Authors
+Jeffrey Lei
+Raymond Luy
