@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_socketio import SocketIO, send
 from models import db
 
 app = Flask(__name__)
@@ -19,5 +20,19 @@ db.init_app(app)
 def index():
     return "Hello, World!"
 
+
+socketIo = SocketIO(app, cors_allowed_origins="*")
+
+app.debug = True
+app.host = 'localhost'
+
+
+@socketIo.on("message")
+def handle_message(msg):
+    print(msg)
+    send(msg, broadcast=True)
+    return None
+
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    socketIo.run(app)
