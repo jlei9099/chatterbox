@@ -1,0 +1,96 @@
+h3 {
+    text-align: center;  
+    color: #277582;  
+    padding: 20px;  
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.login-form {
+    width: 350px;  
+    margin: auto;  
+    margin: 20 0 0 450px;  
+    padding: 80px;
+    background: #41ccb0;  
+    border-radius: 15px ;
+}
+
+.login-user {
+    width: 325px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;
+}
+
+.login-pw {
+    width: 325px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;
+}
+
+.sign-in {
+    text-align: center;
+    margin-left: 85px;
+    width: 150px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 15px;    
+    color: black; 
+}
+
+.sign-up-a {
+    text-align: center;
+}
+
+.signup-form {
+    width: 350px;  
+    margin: auto;  
+    margin: 20 0 0 450px;  
+    padding: 80px;
+    background: #41ccb0;  
+    border-radius: 15px ;
+}
+
+.signup-user {
+    width: 325px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;
+}
+
+.signup-pw {
+    width: 325px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;
+}
+
+.signup-email {
+    width: 325px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;
+}
+
+.register {
+    text-align: center;
+    margin-left: 85px;
+    width: 150px;  
+    height: 20px;  
+    border: none;  
+    border-radius: 15px;    
+    color: black; 
+}
+
+.login-a {
+    text-align: center;
+}

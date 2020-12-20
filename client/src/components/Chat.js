@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import io from "socket.io-client";
 
+let endPoint = "http://localhost:5000/";
+let socket = io.connect({endPoint});
+
 const Chat = () => {
 
     const [messages, setMessages] = useState([""]);

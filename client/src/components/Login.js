@@ -1,19 +1,20 @@
 import React, { Component } from "react";
+import './forms.css';
 
 export default class Login extends Component {
     render() {
         return (
-            <form>
+            <form className="login-form">
                 <h3>Log in</h3>
 
                 <div className="form-group">
                     <label>Username</label>
-                    <input type="username" className="form-control" placeholder="Enter username" />
+                    <input type="username" className="login-user" placeholder="Enter username" />
                 </div>
 
                 <div className="form-group">
                     <label>Password</label>
-                    <input type="password" className="form-control" placeholder="Enter password" />
+                    <input type="password" className="login-pw" placeholder="Enter password" />
                 </div>
 
                 <div className="form-group">
@@ -23,9 +24,10 @@ export default class Login extends Component {
                     </div>
                 </div>
 
-                <button type="submit" className="btn btn-dark btn-lg btn-block">Sign in</button>
-                <p className="forgot-password text-right">
-                <a href="#">Forgot password?</a> or <a href='/signup'>Sign Up!</a>
+                <button type="submit" className="sign-in">Sign in</button>
+
+                <p className="sign-up-a">
+                    Not Registered? <a href='/signup'>Sign Up!</a>
                 </p>
             </form>
         );
