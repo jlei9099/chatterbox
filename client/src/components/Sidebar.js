@@ -39,26 +39,10 @@ function Sidebar() {
           </div>
       </div>
 
-      <div className="sidebar__voice">
-        <SignalCellularAltIcon
-          className="sidebar__voiceIcon"
-          fontSize="large"
-        />
-        <div className="sidebar__voiceInfo">
-          <h3>Voice Connected</h3>
-          <p>Stream</p>
-        </div>
-
-        <div className="sidebar__voiceIcons">
-          <InfoOutlinedIcon />
-          <CallIcon />
-        </div>
-      </div>
-
       <div className="sidebar__profile">
         <Avatar />
         <div className="sidebar__profileInfo">
-          <h3>SrikarK</h3>
+          <h3>User</h3>
           <p>#ID</p>
         </div>
 
