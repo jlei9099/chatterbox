@@ -20,9 +20,14 @@ Run "npm start" in the current directory to bring up the localhost server. It sh
 ## Requirements
 
 (___TODO__: List out any technologies needed to run your project_)
+
 Node 14.15.1
+
 NPM 6.14.8
+
 PostgreSQL 13
+
+Python 3.8.5
 
 ## Data Model
 
@@ -94,6 +99,7 @@ Here's an [example](https://www.kauligmedia.com/media/1589/sitemap-01.jpg). Most
 
 (___TODO__: List any tutorials or material referenced that you've based your code off of_)
 
+https://www.c-sharpcorner.com/article/creating-a-simple-login-page-using-html-and-css/
 https://www.freecodecamp.org/news/react-router-tutorial/
 
 ## Authors
