@@ -2,7 +2,11 @@ import React from "react";
 import './App.css';
 import io from "socket.io-client";
 
-import { Switch, BrowserRouter, Route } from "react-router-dom";
+import {
+    Switch,
+    BrowserRouter,
+    Route
+}   from "react-router-dom";
 
 import Sidebar from "./Sidebar";
 import Home from './components/Home.js';
@@ -12,6 +16,7 @@ import Navigation from './components/Navigation.js';
 import Login from './components/Login.js';
 import SignUp from './components/Signup.js';
 import Chat from './components/Chat.js'
+
 
 function App() {
   return (
