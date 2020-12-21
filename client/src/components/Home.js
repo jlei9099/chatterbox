@@ -1,6 +1,7 @@
 import React from "react";
 import Chat from "./Chat.js";
 import Sidebar from "./Sidebar";
+import './Home.css';
 
 const Home = () => (
     <div>
