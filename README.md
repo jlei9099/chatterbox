@@ -29,6 +29,8 @@ PostgreSQL 13
 
 Python 3.8.5
 
+Flask 1.1.2
+
 ## Data Model
 
 (___TODO__: A description of your application's data and their relationships to each other_)
