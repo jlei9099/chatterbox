@@ -1,6 +1,8 @@
 from flask import Flask
+from flask import request
 from flask_socketio import SocketIO, send
 from models import db
+import psycopg2
 
 app = Flask(__name__)
 
@@ -20,6 +22,9 @@ db.init_app(app)
 def index():
     return "Hello, World!"
 
+@app.route("/register", methods=["POST","GET"])
+def signup():
+	user = request.form.get("user","")
 
 socketIo = SocketIO(app, cors_allowed_origins="*")
 
