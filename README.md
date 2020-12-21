@@ -45,38 +45,11 @@ An Example `User`:
 ```javascript
 {
   id: 5,
-  firstName: "Mary",
-  lastName: "Jane"
+  UserName: "Username"
+  PassWord: "NotAFakePassword"
 }
 ```
 
-An Example `Item`:
-
-```javascript
-{
-  id: 3,
-  name: "Lamp",
-  price: "$19.99"
-}
-```
-
-An Example `Order`:
-
-```javascript
-{
-  id: 1,
-  user_id: 5,// a reference to a User object
-}
-```
-
-An Example `OrderItems`:
-
-```javascript
-{
-  item_id: 3,
-  order_id: 1 // References an Order object
-}
-```
 
 ## Site map
 
@@ -90,16 +63,14 @@ Here's an [example](https://www.kauligmedia.com/media/1589/sitemap-01.jpg). Most
 
 1. As non-registered user, I can create a new account on the site.
 2. As a user, I can log in to the site.
-3. As a user, I can view items for sale.
-4. As a user, I can add items to a shopping cart.
-5. as a user, I can remove items from a shopping cart.
-6. as a user, I can purchase items in my cart.
+3. As a user, I can send messages to other users.
 
 ## References Used
 
 (___TODO__: List any tutorials or material referenced that you've based your code off of_)
 
 https://www.c-sharpcorner.com/article/creating-a-simple-login-page-using-html-and-css/
+
 https://www.freecodecamp.org/news/react-router-tutorial/
 
 ## Authors
