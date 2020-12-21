@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import io from "socket.io-client";
 
-let endPoint = "http://localhost:5000/";
-let socket = io.connect({endPoint});
+var socket = io.connect('http://127.0.0.1:5000/');
 
 const Chat = () => {
 
@@ -27,9 +26,6 @@ const Chat = () => {
       if (message !== "") {
         socket.emit("message", message);
         setMessage("");
-      }
-      else {
-        alert("Please Add A Message");
       }
     };
 

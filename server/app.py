@@ -18,13 +18,16 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://%(user)s:\
 %(pw)s@%(host)s:%(port)s/%(db)s' % POSTGRES
 db.init_app(app)
 
-@app.route('/')
+
+@app.route('/', methods=['GET', 'POST'])
 def index():
     return "Hello, World!"
 
-@app.route("/register", methods=["POST","GET"])
+
+@app.route("/register", methods=["POST", "GET"])
 def signup():
-	user = request.form.get("user","")
+    user = request.form.get("user", "")
+
 
 socketIo = SocketIO(app, cors_allowed_origins="*")
 
@@ -36,7 +39,6 @@ app.host = 'localhost'
 def handle_message(msg):
     print(msg)
     send(msg, broadcast=True)
-    return None
 
 
 if __name__ == '__main__':
