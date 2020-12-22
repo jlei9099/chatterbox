@@ -18,6 +18,7 @@ POSTGRES = {
     'port': '5432',
 }'''
 
+
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.Text, unique=True)
@@ -26,31 +27,31 @@ class User(db.Model):
     is_active = db.Column(db.Boolean, default=True, server_default='true')
 
 
-@property
-def rolenames(self):
-    try:
-        return self.roles.split(',')
-    except Exception:
-        return []
+    @property
+    def rolenames(self):
+        try:
+            return self.roles.split(',')
+        except Exception:
+            return []
 
 
-@classmethod
-def lookup(cls, username):
-    return cls.query.filter_by(username=username).one_or_none()
+    @classmethod
+    def lookup(cls, username):
+        return cls.query.filter_by(username=username).one_or_none()
 
 
-@classmethod
-def identify(cls, id):
-    return cls.query.get(id)
+    @classmethod
+    def identify(cls, id):
+        return cls.query.get(id)
 
 
-@property
-def identity(self):
-    return self.id
+    @property
+    def identity(self):
+        return self.id
 
 
-def is_valid(self):
-    return self.is_active
+    def is_valid(self):
+        return self.is_active
 
 
 app = flask.Flask(__name__)
@@ -60,7 +61,7 @@ app.config['JWT_ACCESS_LIFESPAN'] = {'hours': 24}
 app.config['JWT_REFRESH_LIFESPAN'] = {'days': 30}
 
 guard.init_app(app, User)
-app.config['SQLALCHEMY_DATABASE_URI'] = f"postgresql:///{os.path.join(os.getcwd(), 'database.db')}"
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost:5432/Accounts'
 db.init_app(app)
 cors.init_app(app)
 
@@ -77,7 +78,7 @@ with app.app_context():
 
 @app.route('/')
 def home():
-    return "Hello, World!"
+    return "Hello World!"
 
 
 @app.route('/login', methods=['POST'])
