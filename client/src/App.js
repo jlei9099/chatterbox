@@ -1,6 +1,6 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './App.css';
-import io from "socket.io-client";
+//import io from "socket.io-client";
 
 import {
     Switch,
@@ -8,7 +8,7 @@ import {
     Route
 }   from "react-router-dom";
 
-import Home from './components/Home.js';
+//import Home from './components/Home.js';
 import About from './components/About.js';
 import Contact from './components/Contact.js';
 import Navigation from './components/Navigation.js';
@@ -41,6 +41,13 @@ function App() {
 
     </BrowserRouter>
   );
+}
+
+function Home() {
+  useEffect(() => {
+    fetch("/").then(resp => resp.json()).then(resp => console.log(resp))
+  }, [])
+  return <h1>Home</h1>;
 }
 
 export default App;

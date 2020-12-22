@@ -18,6 +18,9 @@ POSTGRES = {
     'port': '5432',
 }'''
 
+# windows cmd
+# set FLASK_APP=app.py
+# python -m flask run
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
