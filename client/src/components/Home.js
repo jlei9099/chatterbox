@@ -5,10 +5,11 @@ import './Home.css';
 
 const Home = () => (
     <div>
-      <h1 className="Header">Home</h1>
-      <p>Welcome to chatterbox</p>
-	      <Sidebar/>
-         <Chat/>
+      <h1 className="Header">Welcome to chatterbox!</h1>
+
+      <div className="chat">
+        <Chat/>
+      </div>
      </div>
   );
   

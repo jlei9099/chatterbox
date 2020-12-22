@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useState, useEffect} from "react";
 import './App.css';
 //import io from "socket.io-client";
 
@@ -8,7 +8,7 @@ import {
     Route
 }   from "react-router-dom";
 
-//import Home from './components/Home.js';
+import Home from './components/Home.js';
 import About from './components/About.js';
 import Contact from './components/Contact.js';
 import Navigation from './components/Navigation.js';
@@ -38,16 +38,19 @@ function App() {
           </Route>
         </Switch>
       </div>
-
     </BrowserRouter>
   );
 }
 
-function Home() {
-  useEffect(() => {
-    fetch("/").then(resp => resp.json()).then(resp => console.log(resp))
-  }, [])
-  return <h1>Home</h1>;
-}
+/*function Home() {
+  const [initialData, setInitialData] = useState([{}])
+
+  useEffect(()=>{
+    fetch('/').then(
+      response => response.json()
+    ).then(data => console.log(data))
+  }, []);
+  return <h1>{initialData.title}</h1>;
+}*/
 
 export default App;

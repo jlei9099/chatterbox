@@ -1,17 +1,25 @@
-h1 {
-    color: White;
-    padding: 20px;
-    background: #2f3135;
+.Header {
+    padding-top: 10px;
+    text-align: center;
 }
 
-h2 {
-    color: White;
-    padding: 20px;
-    background: #2f3135;
+.header2 {
+    /* padding goes top, right, bottom, left */
+    padding: 75px 100px 25px 500px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-p {
-    color: White;
-    padding: 20px;
-    background: #2f3135;
+body {
+    color:white;
+    background-image: url(https://img.wallpapersafari.com/desktop/1680/1050/87/63/xve9RB.jpg);
+}
+
+p span {
+    display: block;
+    padding-left: 500px;
+}
+
+.chat {
+    padding-top: 100px;
+    text-align: center;
 }

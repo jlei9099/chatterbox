@@ -81,7 +81,7 @@ with app.app_context():
 
 @app.route('/')
 def home():
-    return "Hello World!"
+    return {'title': 'Hello World!'}
 
 
 @app.route('/login', methods=['POST'])
