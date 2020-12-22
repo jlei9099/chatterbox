@@ -64,6 +64,8 @@ An Example `Server`:
 
 https://www.gloomaps.com/wx3kQ2NR4d
 
+![SiteMap](/sitemap.png)
+
 ## User Stories or Use Cases
 
 1. As a non-registered user, I can create a new account on the site.
