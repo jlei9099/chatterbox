@@ -29,6 +29,8 @@ PostgreSQL 13
 
 Python 3.8.5
 
+Flask 1.1.2
+
 ## Data Model
 
 (___TODO__: A description of your application's data and their relationships to each other_)
@@ -68,6 +70,9 @@ Here's an [example](https://www.kauligmedia.com/media/1589/sitemap-01.jpg). Most
 ## References Used
 
 (___TODO__: List any tutorials or material referenced that you've based your code off of_)
+https://yasoob.me/posts/how-to-setup-and-deploy-jwt-auth-using-react-and-flask/
+
+https://stackoverflow.com/questions/23839656/sqlalchemy-no-password-supplied-error
 
 https://www.c-sharpcorner.com/article/creating-a-simple-login-page-using-html-and-css/
 
