@@ -70,6 +70,9 @@ Here's an [example](https://www.kauligmedia.com/media/1589/sitemap-01.jpg). Most
 ## References Used
 
 (___TODO__: List any tutorials or material referenced that you've based your code off of_)
+https://yasoob.me/posts/how-to-setup-and-deploy-jwt-auth-using-react-and-flask/
+
+https://stackoverflow.com/questions/23839656/sqlalchemy-no-password-supplied-error
 
 https://www.c-sharpcorner.com/article/creating-a-simple-login-page-using-html-and-css/
 
