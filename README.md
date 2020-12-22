@@ -62,9 +62,7 @@ An Example `Server`:
 
 ## Site map
 
-(___TODO__: Draw out a site map that shows how pages are related to each other_)
-
-Here's an [example](https://www.kauligmedia.com/media/1589/sitemap-01.jpg). Mostly looking for the names of pages and where they flow to.
+https://www.gloomaps.com/wx3kQ2NR4d
 
 ## User Stories or Use Cases
 
@@ -83,6 +81,8 @@ Here's an [example](https://www.kauligmedia.com/media/1589/sitemap-01.jpg). Most
 - https://www.c-sharpcorner.com/article/creating-a-simple-login-page-using-html-and-css/
 
 - https://www.freecodecamp.org/news/react-router-tutorial/
+
+- https://www.youtube.com/watch?v=sOVxkPvAHjI
 
 ## Authors
 Jeffrey Lei
