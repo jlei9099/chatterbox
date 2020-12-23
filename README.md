@@ -76,6 +76,8 @@ https://www.gloomaps.com/wx3kQ2NR4d
 
 ## References Used
 
+- https://medium.com/cleverprogrammer/discord-clone-using-reactjs-the-written-guide-for-beginners-77464c95827f
+
 - https://yasoob.me/posts/how-to-setup-and-deploy-jwt-auth-using-react-and-flask/
 
 - https://stackoverflow.com/questions/23839656/sqlalchemy-no-password-supplied-error
